@@ -2,6 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 
+import { Layout, LayoutMainPage } from './components';
 import { BookPage, MainPage, TermsPage } from './pages';
 
 import './assets/styles/globals.css';
@@ -15,8 +16,8 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route path='/' element={<p>layout</p>}>
-          <Route element={<p>layoutMainPage</p>}>
+        <Route path='/' element={<Layout />}>
+          <Route element={<LayoutMainPage />}>
             <Route path='/' element={<Navigate to='/books/all' />} />
             <Route path='/books/:category' element={<MainPage />} />
             <Route path='/terms' element={<TermsPage contentView='terms' />} />
