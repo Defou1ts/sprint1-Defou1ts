@@ -1,0 +1,27 @@
+:root {
+  --font-family: 'Montserrat', sans-serif;
+
+  /* Main */
+  --accent: #ff5253;
+  --dark: #363636;
+  --white: #ffffff;
+  --dark-30: rgba(54, 54, 54, 0.3);
+
+  /* Button */
+  --pressed: linear-gradient(233.73deg, #f83600 -16.08%, #f9d423 327.37%);
+  --hover: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+
+  /* Other */
+  --warning: #ffbc1f;
+  --positive: #00ca71;
+  --negative: #f42c4f;
+  --positive-background: #ebf9f1;
+  --negative-background: #feebea;
+
+  /* Grey */
+  --grey-70: #727272;
+  --grey-40: #a7a7a7;
+  --grey-20: #bfc4c9;
+  --grey-10: #ebebeb;
+  --grey-5: #f9f9fa;
+}
