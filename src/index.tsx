@@ -13,19 +13,19 @@ const container = document.getElementById('root')!;
 const root = createRoot(container);
 
 root.render(
-  <React.StrictMode>
-    <HashRouter>
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route element={<LayoutMainPage />}>
-            <Route path='/' element={<Navigate to='/books/all' />} />
-            <Route path='/books/:category' element={<MainPage />} />
-            <Route path='/terms' element={<TermsPage contentView='terms' />} />
-            <Route path='/contract' element={<TermsPage contentView='contract' />} />
-          </Route>
-          <Route path='/books/:category/:bookId' element={<BookPage />} />
-        </Route>
-      </Routes>
-    </HashRouter>
-  </React.StrictMode>
+    <React.StrictMode>
+        <HashRouter>
+            <Routes>
+                <Route path='/' element={<Layout />}>
+                    <Route element={<LayoutMainPage />}>
+                        <Route path='/' element={<Navigate to='/books/all' />} />
+                        <Route path='/books/:category' element={<MainPage />} />
+                        <Route path='/terms' element={<TermsPage contentView='terms' />} />
+                        <Route path='/contract' element={<TermsPage contentView='contract' />} />
+                    </Route>
+                    <Route path='/books/:category/:bookId' element={<BookPage />} />
+                </Route>
+            </Routes>
+        </HashRouter>
+    </React.StrictMode>
 );

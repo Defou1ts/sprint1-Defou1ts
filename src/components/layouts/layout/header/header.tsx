@@ -1,4 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
+import { Link } from 'react-router-dom';
 import cn from 'classnames';
 
 import { ReactComponent as LogoIcon } from '../../../../assets/icons/logo.svg';
@@ -12,21 +13,23 @@ import { HeaderProps } from './header.props';
 import styles from './header.module.css';
 
 export const Header = ({ className, ...props }: HeaderProps) => {
-  const { name, icon: UserIcon } = user;
+    const { name, icon: UserIcon } = user;
 
-  return (
-    <header className={cn(className, styles.header)} {...props}>
-      <Burger isOpened={false} onClick={() => {}} />
-      <LogoIcon className={styles.logo} />
-      <Htag tag='h3'>Библиотека</Htag>
-      <div className={styles.user}>
-        <Text type='subtitle' size='s'>
-          Привет, {name}!
-        </Text>
-        <div className={styles.imageWrapper}>
-          <UserIcon className={styles.userImage} />
-        </div>
-      </div>
-    </header>
-  );
+    return (
+        <header className={cn(className, styles.header)} {...props}>
+            <Burger isOpened={false} onClick={() => {}} />
+            <Link to='/' className={styles.logo}>
+                <LogoIcon />
+            </Link>
+            <Htag tag='h3'>Библиотека</Htag>
+            <div className={styles.user}>
+                <Text type='subtitle' size='s'>
+                    Привет, {name}!
+                </Text>
+                <div className={styles.imageWrapper}>
+                    <UserIcon className={styles.userImage} />
+                </div>
+            </div>
+        </header>
+    );
 };
