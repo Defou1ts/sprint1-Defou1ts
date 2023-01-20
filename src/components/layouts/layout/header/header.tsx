@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import cn from 'classnames';
 
 import { ReactComponent as LogoIcon } from '../../../../assets/icons/logo.svg';
-import { user } from '../../../../mock';
+import { user } from '../../../../mocks/mock';
 import { Burger } from '../../../common/burger/burger';
 import { Htag } from '../../../common/htag/htag';
 import { Text } from '../../../common/text/text';
