@@ -12,65 +12,80 @@ export const user: User = {
 };
 
 export interface BookCategory {
-    category: string;
+    name: string;
+    label: string;
     count: number;
 }
 
 export const booksCategories: BookCategory[] = [
     {
-        category: 'Бизнес-книги',
+        name: 'business',
+        label: 'Бизнес-книги',
         count: 14,
     },
     {
-        category: 'Детективы',
+        name: 'detective',
+        label: 'Детективы',
         count: 8,
     },
     {
-        category: 'Детские книги',
+        name: 'child',
+        label: 'Детские книги',
         count: 14,
     },
     {
-        category: 'Зарубежная литература',
+        name: 'abroad',
+        label: 'Зарубежная литература',
         count: 2,
     },
     {
-        category: 'История',
+        name: 'history',
+        label: 'История',
         count: 5,
     },
     {
-        category: 'Классическая литература',
+        name: 'classic',
+        label: 'Классическая литература',
         count: 12,
     },
     {
-        category: 'Книги по психологии',
+        name: 'psychology',
+        label: 'Книги по психологии',
         count: 11,
     },
     {
-        category: 'Компьютерная литература',
+        name: 'computer',
+        label: 'Компьютерная литература',
         count: 54,
     },
     {
-        category: 'Культура и искусство',
+        name: 'culture',
+        label: 'Культура и искусство',
         count: 5,
     },
     {
-        category: 'Наука и образование',
+        name: 'sceince',
+        label: 'Наука и образование',
         count: 2,
     },
     {
-        category: 'Публицистическая литераутра',
+        name: 'public',
+        label: 'Публицистическая литераутра',
         count: 54,
     },
     {
-        category: 'Справочники',
+        name: 'manual',
+        label: 'Справочники',
         count: 10,
     },
     {
-        category: 'Фантастика',
+        name: 'fantasy',
+        label: 'Фантастика',
         count: 12,
     },
     {
-        category: 'Юмористическая литература',
+        name: 'humor',
+        label: 'Юмористическая литература',
         count: 8,
     },
 ];

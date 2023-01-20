@@ -1,0 +1,43 @@
+.sidebar {
+}
+.firstLevelMenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 42px 0px;
+}
+.firstLevelActive {
+    position: relative;
+    background: var(--button-hover);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 16px;
+}
+.firstLevelActive::after {
+    content: '';
+    position: absolute;
+    max-width: 255px;
+    width: 100%;
+    background: var(--button-hover);
+    height: 1px;
+    left: 0;
+    bottom: -8px;
+}
+.secondLevelMenu {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px 0px;
+}
+.secondLevelActive {
+    position: relative;
+    background: var(--button-hover);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 16px;
+}
+.category {
+}
