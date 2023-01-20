@@ -29,11 +29,18 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    grid-template-columns: 27px auto;
+    gap: 24px;
+  }
   .user {
     display: none;
     grid-template-columns: auto auto;
     gap: 16px;
     justify-content: right;
     align-items: center;
+  }
+  .logo {
+    display: none;
   }
 }
