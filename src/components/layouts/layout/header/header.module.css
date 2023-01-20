@@ -3,8 +3,9 @@
     display: grid;
     grid-template-columns: 279px auto auto;
     align-items: center;
-    gap: 6px;
+		gap: 0px 6px;
 }
+
 .user {
     display: grid;
     grid-template-columns: auto auto;
