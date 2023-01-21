@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import cn from 'classnames';
 
@@ -53,8 +52,19 @@ export const Sidebar = ({ className, ...props }: SidebarProps) => {
                                     [styles.secondLevelActive]: currentCategory === 'all',
                                 })}
                             >
-                                Все книги
-                            </Link>{' '}
+                                {currentCategory === 'all' ? (
+                                    <Htag
+                                        className={cn(styles.category, {
+                                            [styles.secondLevelActive]: currentCategory === 'all',
+                                        })}
+                                        tag='h5'
+                                    >
+                                        Все книги
+                                    </Htag>
+                                ) : (
+                                    'Все книги'
+                                )}
+                            </Link>
                         </li>
                         {renderedSecondLevelMenu}
                     </ul>
