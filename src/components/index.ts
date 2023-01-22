@@ -3,6 +3,7 @@ export * from './common/htag/htag';
 export * from './common/text/text';
 export * from './common/burger/burger';
 export * from './common/search/search';
+export * from './common/sort/sort';
 
 // Forms
 

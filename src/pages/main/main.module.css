@@ -7,3 +7,11 @@
         'list list list list list';
     grid-template-rows: 38px auto;
 }
+
+@media screen and (max-width: 576px) {
+    .main {
+        grid-template-columns: 32px 32px auto 32px 32px;
+        gap: 19px 16px;
+        grid-template-rows: 32px auto;
+    }
+}
