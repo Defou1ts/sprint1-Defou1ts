@@ -1,0 +1,9 @@
+.main {
+    display: grid;
+    gap: 32px 16px;
+    grid-template-columns: minmax(0, 350px) 150px auto 38px 38px;
+    grid-template-areas:
+        'search sort . type type'
+        'list list list list list';
+    grid-template-rows: 38px auto;
+}
